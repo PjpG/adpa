@@ -1,14 +1,41 @@
+@font-face {
+  font: {
+    family: 'AlwaysForever';
+    weight: 'normal';
+    style: 'normal';
+  }
+  src: asset-url('always_forever.ttf', font) format('truetype');
+}
 
 
 .row-fluid.home {
-  margin-top: 20%;
-  .span5.about {
-    div.header {
-      h4 {
-      
+  .span5 {
+    .header {
+      margin-bottom: 20px;
+      .header-image {
+        padding-top: 18px;
+        width: 270px;
+/*        height: 56px;*/
+        height: 38px;
+        margin: 0 auto;
+        font-family: 'AlwaysForever', Helvetica, Arial, sans-serif !important;
+        font-weight: bolder;
+        color: whitesmoke;
+        vertical-align: middle;
+        h4 {
+          text-align: center;
+          font-size: 3em;
+          margin: 0;
+        }
       }
     }
-    div.text {
+    .first {
+      background-image: url('/assets/board1.png');
+    }
+    .second {
+      background-image: url('/assets/board2.png');
+    }
+    .text {
       padding: 10px;
       -webkit-border-radius: 9px;
       -moz-border-radius: 9px;
