@@ -23,9 +23,14 @@
       </div>
     </div>
     <div class="text">
-      <p>
-        Cupcake ipsum dolor sit amet cotton candy cookie dessert chocolate. Cake I love muffin I love cheesecake sweet chocolate cake croissant. Ice cream tiramisu I love liquorice oat cake. Lollipop sesame snaps brownie ice cream. Croissant I love icing soufflé halvah biscuit halvah pudding. Danish chocolate cake ice cream candy candy candy marzipan. Topping tart applicake cheesecake cookie jujubes. Pudding icing chupa chups.
-      </p>
+      <%= form_for @message, :url => home_path do |form| %>
+        <%= form.text_field :name, placeholder: "imię i nazwisko", :class => "input_label" %>
+        <%= form.email_field :email, placeholder: "e-mail", :class => "input_label" %>
+        <%= form.hidden_field :subject, value: "blank", :class => "input_label"%>
+        <%= form.telephone_field :phone, placeholder: "numer telefonu", :class => "input_label" %>
+        <%= form.text_area :body, placeholder: "wiadomość", rows: "5"%>
+        <%= form.submit "Wyślij", :class => "btn btn-info" %>
+      <% end %>
     </div>
   </div>
 </div>
