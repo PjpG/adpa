@@ -8,8 +8,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container-fluid">
-  <%= yield %>
-</div>
+  <%= render :partial => "layouts/flash"%>
+  <div class="container-fluid">
+
+    <%= yield %>
+  </div>
 </body>
 </html>

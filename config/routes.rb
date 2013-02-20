@@ -1,10 +1,10 @@
 Adpa::Application.routes.draw do
   
-  root to: 'info#home'
+  root to: 'info#new'
   
-  match 'home' => 'info#home', as: 'home', :via => :get
+  match 'home' => 'info#new', as: 'home', :via => :get
   # match 'contact' => 'contact#new', :as => 'contact', :via => :get
-  match 'home' => 'home#create', :as => 'home', :via => :post
+  match 'home' => 'info#create', :as => 'home', :via => :post
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
