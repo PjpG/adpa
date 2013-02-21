@@ -1,6 +1,6 @@
 # coding: utf-8
 class InfoController < ApplicationController
-  def new
+  def home
     @message = Message.new
   end  
   def create

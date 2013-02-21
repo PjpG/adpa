@@ -1,0 +1,16 @@
+<table style="background: #fff, url('/assets/logo.png');">
+  <thead>
+    <th><%= @message.subject %></th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @message.name %> pisze:</td>
+      <td><%= @message.body %></td>
+    </tr>
+    <tr>
+      <td>Kontakt:</td>
+      <td><%= @message.phone %></td> | 
+      <td><%= @message.email %></td>
+    </tr>
+  </tbody>
+</table>

@@ -23,14 +23,7 @@
       </div>
     </div>
     <div class="text">
-      <%= form_for @message, :url => home_path do |form| %>
-        <%= form.text_field :name, placeholder: "imię i nazwisko", :class => "input_label" %>
-        <%= form.email_field :email, placeholder: "e-mail", :class => "input_label" %>
-        <%= form.hidden_field :subject, value: "blank", :class => "input_label"%>
-        <%= form.telephone_field :phone, placeholder: "numer telefonu", :class => "input_label" %>
-        <%= form.text_area :body, placeholder: "wiadomość", rows: "5"%>
-        <%= form.submit "Wyślij", :class => "btn btn-info" %>
-      <% end %>
+      <%= render 'new_message' %>
     </div>
   </div>
 </div>

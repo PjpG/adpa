@@ -1,8 +1,8 @@
 Adpa::Application.routes.draw do
   
-  root to: 'info#new'
+  root to: 'info#home'
   
-  match 'home' => 'info#new', as: 'home', :via => :get
+  match 'home' => 'info#home', as: 'home', :via => :get
   # match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'home' => 'info#create', :as => 'home', :via => :post
   
