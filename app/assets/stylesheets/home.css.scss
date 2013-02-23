@@ -89,6 +89,9 @@
 
 /* small desktop */
 @media (min-width: 980px) and (max-width: 1009px) { 
+  .span5.offset9 {
+    margin-left: 600px;
+  }
   .row-fluid.home {
     .span5.contact {
       .text {
@@ -150,7 +153,7 @@
     margin-bottom: 10%;
     .span5 {
       img {
-        margin-left: 40px;
+        width: 100%;
       }
     }
   }
