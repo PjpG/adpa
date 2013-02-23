@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+$(document).ready(function(){
+  var display_width = document.documentElement.clientWidth
+  if (display_width < 979)  {
+    $('.logo').find('.span5').removeClass('offset9').addClass('offset7');
+  };
+});

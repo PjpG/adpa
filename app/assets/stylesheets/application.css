@@ -15,8 +15,7 @@
 
 html body {
   background-color: #d8d3b7;
-  background-image: url('/assets/bg2.png');
+  background-image: url('/assets/bg2-horizontal.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
