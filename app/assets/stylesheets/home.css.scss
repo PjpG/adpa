@@ -65,11 +65,30 @@
 @media (min-width: 1200px) {
 }
 
-/* Landscape */
+/* Landscape tablet */
 @media (min-width: 1010px) and (max-width: 1199px ) {
   .span5.offset9 {
     margin-left: 635px;
   }
+  .row-fluid.home {
+    .span5.contact {
+      .text {
+        input { 
+          width: 45%; 
+        } 
+        textarea {
+          width: 95%;
+        }
+        input[type="submit"] {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* small desktop */
+@media (min-width: 980px) and (max-width: 1009px) { 
   .row-fluid.home {
     .span5.contact {
       .text {

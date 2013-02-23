@@ -17,7 +17,7 @@
 
 $(document).ready(function(){
   var display_width = document.documentElement.clientWidth
-  if (display_width < 979)  {
+  if (display_width < 1010)  {
     $('.logo').find('.span5').removeClass('offset9').addClass('offset7');
   };
 });
