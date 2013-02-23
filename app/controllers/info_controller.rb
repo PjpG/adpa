@@ -11,7 +11,7 @@ class InfoController < ApplicationController
       redirect_to(root_path, :notice => "Message was successfully sent.")
     else
       flash.now.alert = "Please fill all fields."
-      render :new
+      render :home
     end
     
   end
