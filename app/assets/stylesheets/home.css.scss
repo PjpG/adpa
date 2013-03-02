@@ -53,6 +53,32 @@
           width: 62px;
         }
       }
+      .statute_show {
+        margin-top: 20px;
+        float: right;
+        font-weight: bold;
+        color: #000000;
+        text-shadow: 0 1px 0 #ffffff;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+      }
+      .statute_show:hover, .statute_show:focus {
+        color: #000000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+      }
+    }
+    .statute {
+      display: none;
+      padding: 10px;
+      -webkit-border-radius: 9px;
+      -moz-border-radius: 9px;
+      border-radius: 9px;
+      background-color: rgba(255, 255, 255, .5);
+      max-height: 300px;
+      overflow-y: scroll;
     }
   }
   .about {
@@ -108,6 +134,7 @@
     }
   }
 }
+
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 

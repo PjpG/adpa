@@ -20,4 +20,14 @@ $(document).ready(function(){
   if (display_width < 1010)  {
     $('.logo').find('.span5').removeClass('offset9').addClass('offset7');
   };
+  
+  $('.statute_show').on('click', function(){
+    $(this).closest('.text').hide();
+    $(this).closest('.span5').find('.statute').show();
+  });
+  $('.close').on('click', function(){
+    $(this).closest('.statute').hide();
+    $(this).closest('.span5').find('.text').show();
+  });
+  
 });
