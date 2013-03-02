@@ -1,5 +1,9 @@
 Adpa::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+  
+  
+  # Google Analitycs
+  GA.tracker = "UA-38975326-1"
 
   # Code is not reloaded between requests
   config.cache_classes = true
