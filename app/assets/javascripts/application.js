@@ -19,8 +19,8 @@ $(document).ready(function(){
   var display_width = document.documentElement.clientWidth
   if (display_width < 1010)  {
     $('.logo').find('.span5').removeClass('offset9').addClass('offset7');
-  };
-  
+    $('footer').find('.row').find('.span8').removeClass('offset4').addClass('offset2')
+  }  
   $('.statute_show').on('click', function(){
     $(this).closest('.text').hide();
     $(this).closest('.span5').find('.statute').show();

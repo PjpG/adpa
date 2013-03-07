@@ -19,3 +19,15 @@ html body {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  opacity: .4;
+  filter: alpha(opacity=40);
+}
+
+footer .span3 {
+  width: 180px;
+}

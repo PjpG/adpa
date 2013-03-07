@@ -80,9 +80,13 @@
       max-height: 300px;
       overflow-y: scroll;
     }
+    .span5.tower {
+      margin-left: -120px;
+      margin-top: -80px;
+    }
   }
   .about {
-    margin-bottom: 20px;
+/*    margin-bottom: 20px;*/
   }
   
 }
@@ -157,7 +161,7 @@
 }
  
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
+@media (max-width: 768px) { 
   html body {
     background-image: url('/assets/bg2-vertical.png');
     background-repeat: repeat-y;
@@ -184,8 +188,31 @@
       }
     }
   }
+  
+  footer {
+    .row {
+      .span8 {
+        width: 600px;
+      }
+    }
+  }
 }
- 
+
+@media (max-width: 565px) {
+  footer {
+    position: relative;
+    .row {
+      .span8 {
+        width: 100%;
+        font-size: 12px;
+        .span3 {
+          float: left;
+        }
+      }
+    }
+  }
+}
+  
 /* Portrait phones and down */
 @media (max-width: 480px) { 
   .row-fluid.home {
