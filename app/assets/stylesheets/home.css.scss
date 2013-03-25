@@ -4,7 +4,11 @@
     weight: 'normal';
     style: 'normal';
   }
-  src: asset-url('always_forever.ttf', font) format('truetype');
+  src: asset-url('always_forever.ttf', font) format('truetype'),
+       asset-url('always_forever-webfont.woff', font) format('woff'),
+       asset-url('always_forever-webfont.eot', font) format('eot'),
+       asset-url('always_forever-webfont.svg', font) format('svg');
+  
 }
 
 
