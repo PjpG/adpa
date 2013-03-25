@@ -28,6 +28,16 @@ footer {
   filter: alpha(opacity=40);
 }
 
-footer .span3 {
-  width: 180px;
+footer {
+  .span3 {
+    width: 180px;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  footer {
+    position: fixed;
+    z-index: -1;
+  }
 }
