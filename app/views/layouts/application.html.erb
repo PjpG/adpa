@@ -11,27 +11,6 @@
   <link rel="shortcut icon" href="/favicon.png">
   <%= analytics_init if Rails.env.production? %>
   <%= csrf_meta_tags %>
-  
-  <!-- Begin Wazala Code -->
-  <script type="text/javascript" charset="utf-8"><!--
-    var is_ssl = ("https:" == document.location.protocol);
-    var setsHost = is_ssl ? "https://www.wazala.com/widget/" : "http://www.wazala.com/widget/";
-    document.write("<"+"script src='" + setsHost + "js/widget_over.js?v=1&amp;rnd="+new Date().getTime()+"' type='text/javascript'" + "><" + "/script" + ">");
-  //--></script>
-
-  <script type="text/javascript" charset="utf-8">
-    var store_widget_options = {};
-    store_widget_options.ver = 1;
-    store_widget_options.display = "overlay";  
-    store_widget_options.placement = "center";  
-    store_widget_options.label = "Sklep";  
-    store_widget_options.touch_button = "floating";  
-    store_widget_options.nickname = "adpa";
-    store_widget_options.lang = "pl";
-    store_widget_options.wazalaURL = setsHost; 
-    var store_widget = new WazalaWidget.widget(store_widget_options);
-  </script>
-  <!-- End Wazala Code -->
 </head>
 <body>
   <%= render :partial => "layouts/flash"%>
